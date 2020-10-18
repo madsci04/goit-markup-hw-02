@@ -1,75 +1,91 @@
 /* пока как есть, все буду дописывать постепенно :) */
 
 /* primary-text-color: #757575 */
+
 /* secondary-text-color: #212121 */
+
 /* white-color-text: #ffffff */
+
 /* text-hover-color: #2196f3 */
+
 /* address-text-color: rgba(255, 255, 255, 0.6) */
+
 /* background-color: #e5e5e5 */
+
 /* secondary-background-color: #f5f4fa */
 
 :root {
-  --primary-text-color: #757575;
-  --secondary-text-color: #212121;
-  --white-color-text: #ffffff;
-  --text-hover-color: #2196f3;
-  --background-color: #e5e5e5;
-  --secondary-background-color: #f5f4fa;
-  --address-text-color: rgba(255, 255, 255, 0.6);
+    --primary-text-color: #757575;
+    --secondary-text-color: #212121;
+    --white-color-text: #ffffff;
+    --text-hover-color: #2196f3;
+    --background-color: #e5e5e5;
+    --secondary-background-color: #f5f4fa;
+    --address-text-color: rgba(255, 255, 255, 0.6);
 }
 
-  body {
-      background-color: var(--secondary-background-color);
-      color: var(--primary-text-color);
-  }
-  
-  /* здесь почему-то не работает с list, поэтому убираю точки через ul */
-  ul {
+body {
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
+}
+
+/* здесь почему-то не работает с list, поэтому убираю точки через ul */
+
+ul {
     list-style: none;
-  }
+}
 
-  /* логотип */
-  .logo {
-      color: var(--secondary-text-color);
-  }
+a {
+    text-decoration: none;
+}
 
-  .logo-web {
-      color: var(--text-hover-color);
-  }
+/* логотип */
 
-  /* навигация */
-.active-link,
-.site-nav .link:hover,
-.site-nav .link:focus {
+.logo {
+    color: var(--secondary-text-color);
+}
+
+.logo-web {
+    color: var(--text-hover-color);
+}
+
+/* навигация */
+
+.active-link, .site-nav .link:hover, .site-nav .link:focus {
     color: var(--text-hover-color);
 }
 
 .site-nav .link {
     color: var(--secondary-text-color);
-} 
+}
 
 /* контактные ссылки */
 
-.contact-link:hover,
-.contact-link:focus {
+.contact-link {
+    color: var(--primary-text-color);
+}
+
+.contact-link:hover, .contact-link:focus {
     color: var(--text-hover-color);
 }
 
 /* герой */
+
 .hero-title {
     color: var(--secondary-text-color);
 }
 
 /* секции */
+
 /* скорее всего потом нужно будет разбить и отдельно стилизировать, но пока так */
-.section-title,
-.section-title-features,
-.section-title-specialist {
+
+.section-title, .section-title-features, .section-title-specialist {
     color: var(--secondary-text-color);
 }
 
-  /* логотип в футере */
-  .logo-footer {
+/* логотип в футере */
+
+.logo-footer {
     color: var(--secondary-text-color);
 }
 
@@ -78,23 +94,26 @@
 }
 
 /* адрес */
-.address-link:hover,
-.address-link:focus {
+
+.address-link {
+    color: var(--primary-text-color);
+}
+
+.address-link:hover, .address-link:focus {
     color: var(--text-hover-color);
 }
 
 /* ПОРТФОЛИО */
 
 /* секции */
+
 .section .filter-button {
     color: var(--secondary-text-color);
 }
 
-.section .filter-button:hover,
-.section .filter-button:focus {
+.section .filter-button:hover, .section .filter-button:focus {
     color: var(--white-color-text);
 }
-
 
 .list-work .job-title {
     color: var(--secondary-text-color);
