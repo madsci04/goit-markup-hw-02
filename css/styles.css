@@ -82,3 +82,20 @@
 .address-link:focus {
     color: var(--text-hover-color);
 }
+
+/* ПОРТФОЛИО */
+
+/* секции */
+.section .filter-button {
+    color: var(--secondary-text-color);
+}
+
+.section .filter-button:hover,
+.section .filter-button:focus {
+    color: var(--white-color-text);
+}
+
+
+.list-work .job-title {
+    color: var(--secondary-text-color);
+}
